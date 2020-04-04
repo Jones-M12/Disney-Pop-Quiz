@@ -1,50 +1,56 @@
-// var startQuiz = document.querySelector("#start");
+//Variable references of the elements from HTML file
 
-// var 
+var startQuiz = document.querySelector("#start");
+var curentQuestion=0;
 
-// var currentPlace=0
+//Question & Answers Array
+var quizQuestions = [
 
-// function getQuestions(){
+    { 
+        text:"What animal was Tarzan raise by?",
+        answers: ["penguin","elephant","gorillas","lions"],
+        correctAnswer: "gorillas",
+   },
 
-//     quizQuestions[currentPlace].text
+   { 
+        text:"What is the name of Princess Jasmine's pet",
+        answers: ["Rashard","Ramir","Rajah","Reyansh"],
+        correctAnswer: "Rajah",
+   },
 
-//  var quizQuestions= [  
-    
-//    { 
-//         text:"What animal was Tarzan raise by?",
-//         answers: ["penguin","elephant","gorillas","lions"],
-//         correctAnswer: "gorillas"
-//         if (text = this.correctAnswer){
-//             alert("correct " + this.correctAnswer),
-//         }
-//         else {
-//             alert("wrong answer");
-//         }
-// },
+   { 
+        text:"Who did Pochaontas father want her to marry?",
+        answers: ["John","Kocoum","Thomas","Meeko"],
+        correctAnswer: "Kocoum",
+   },
 
-//     "Question 2": "What is the name of princess Jasmine's pet?",
-//     answers:[""]
+   { 
+        text: "What Disney movie is the character Mushu from?",
+        answers: ["Little Mermain","The Jungle Book","Princess & the Frog","Mulan"],
+        correctAnswer: "Mulan",
+   },
 
-//     "Question 3": "Who dod Pochaontas father want her to marry?",
+   { 
+        text:"Name the tea cup from Beauty & the Beast?",
+        answers: ["Chip Adams","Chip Potts","Chip Bently","Chip Clockwork"],
+        correctAnswer: "Chip Potts",
+   },
 
-//     "Question 4": "Who is Mushu?",
+   { 
+        text:"What is the name of the child who owns Woody from Toy Story?",
+        answers: ["David","Rosa","Abbey","Andy"],
+        correctAnswer: "Andy",
+   },
+];
+//
 
-//     "Question 5": "Name the tea cup from Beauty & the Beast?",
+//Possible for loop
 
-//     "Question 6": "What is the name of the child who owns Woody from Toy Story?",
-
-//  ]
-
-// quizQuestions[currentPlace]
-// quizQuestions.Question1
-
-// for(i=0;i<quizQuestions.length;i++){
-//     quizQuestions[i]
-// }
-
-
-
+for(i=0;i<quizQuestions.length;i++){
+    quizQuestions[i]
 
 
 
-// startQuiz.addEventListener("click", getQuestions);
+//Needed Event Listeners
+
+startQuiz.addEventListener("click", getQuestions);
