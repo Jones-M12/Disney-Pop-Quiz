@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Disney Pop Quiz</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-dark bg-secondary">
+        <a class="navbar-brand" href="./scorepage.html" id="viewhighscores"><h4>View Highscores</h4></a>
+        
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              
+              <a><strong>Timer: <span id ="score-count">0</span></strong></a>
+            
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            
+          </div>
+    </nav>
+
+
+    <!-- Wecolme Page(Main Page-->
+    <Main class="homepage">
+        <section>
+            <h2>Disney Pop Quiz Challenge</h2>
+            <p> Try to answer the following questions within the 100 seconds time limit.
+                <br><br>
+                Keep in mind, incorrect answers will cause a deducations of 10 seconds.
+            </p>
+            <p><button id="start">Ready? Let's Go!</button></p>
+        </section>    
+    </Main>
+        
+    <!--- Questions & Answers -->
+    <section id= "qa">
+        <div id= "questions">
+            
+        </div>
+        <div id= "answers">
+            <ul id ="answersBox">
+                
+            </ul>
+        </div>
+    </section>
+        
+    <!--- Game has ended. Calculates Final Score-->
+    <section id= "game-end"> <!--hint:display none-->>
+        <div class="finalscore">
+            <h1>Challenge Finished</h1>
+            <form id="finalscore-form" method="POST">
+              <h2>Your final score is: <span id="score-count">0</span> </h2>
+              <label for="score-text">Enter Initials:</label>
+              <input type="text" name="score-text" id="score-text"/>
+              <button id="submit">Submit</button>
+            </form>   
+        </div>
+    </section>
+
+
+    <!-- View Scores Page-->
+    <section id= "display-highscores">
+        <div>       
+            <!-- Header-->
+            <h2>Highscores</h2>
+    
+                <!--Append each players high score: Ordered List-->
+                <ol id= "highscoresol"></ol>
+    
+                <!--- Button Go Back: Returns to Homepage -->
+                <a href="./homepage.html"><button id="goback">Go Back</button></a>
+    
+                <!--- Button: Clears Highscores when clicked-->
+                <button id="clearhighscores">Clear Highscores</button>
+        </div>  
+    </section>    
+    
+
+
+
+
+
+
+
+    <script src="./script.js"> </script>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
