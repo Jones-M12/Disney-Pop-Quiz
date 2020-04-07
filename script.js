@@ -65,6 +65,7 @@ startQuiz.addEventListener("click", function(){
    document.querySelector("#questions").innerHTML= questionText;
    document.querySelector("#answersBox").innerHTML="";
 
+   //manage to turn the answers into button, but click event still not responding
       for (i=0; i < quizAnswers.length; i++){
         document.querySelector("#answersBox").innerHTML += ('<li><button class="answersLi">'+quizAnswers[i]+"</butoon></li>" );
   /* 
@@ -86,8 +87,8 @@ startQuiz.addEventListener("click", function(){
 
 
      function answerbuttons() {
-          answersLi.addEventListener("click", function(event) {
-               var element = event.target;
+          liButtons.addEventListener("click", function(event) {
+               // var element = event.target;
                // liButtons.setAttribute("button");
                
                /* Did not help create a clickable answer
@@ -99,6 +100,7 @@ startQuiz.addEventListener("click", function(){
                */
                if( this.innerHTML === questionAnswers){
                alert("Answer Correct");
+              
                }
                else {
                     alert("Wrong Answers");
