@@ -4,6 +4,7 @@ var startQuiz = document.querySelector("#start");
 var currentQuestion=0;
 var timer = 120;
 // var liButtons = document.querySelector(".answersLi");
+
 //Question & Answers Array
 var quizQuestions = [
 
@@ -50,7 +51,7 @@ var quizQuestions = [
 var quizAnswers = quizQuestions[currentQuestion].answers
 var quizQuestionBox = quizQuestions[currentQuestion]
 var questionText =  quizQuestionBox.text
-var questionanswers= quizQuestionBox.correctAnswer
+var questionAnswers= quizQuestionBox.correctAnswer
 
 
 
@@ -65,16 +66,38 @@ startQuiz.addEventListener("click", function(){
    document.querySelector("#answersBox").innerHTML="";
 
       for (i=0; i < quizAnswers.length; i++){
-        document.querySelector("#answersBox").innerHTML += ('<li class="answersLi">'+quizAnswers[i]+"</li>" );
+        document.querySelector("#answersBox").innerHTML += ('<li><button class="answersLi">'+quizAnswers[i]+"</butoon></li>" );
+  /* 
+   Attempt ro produce the button for the answer text, did not work. 
+     //    liButtons.setAttribute("data-index")
+
+     //    var button= document.createElement("button");
+     //    button.textContent = "Submit";
+     //    liButtons.appendChild(button);
+   */
+
    }
-     answerbuttons();
+
+   //was getting a error code with this, but answers still show without it:
+     // answerbuttons();
 
 }) 
 
-     function answerbuttons() {
-          liButtons.addEventListener("click", function() {
 
-               if( this.innerHTML === questionanswers){
+
+     function answerbuttons() {
+          answersLi.addEventListener("click", function(event) {
+               var element = event.target;
+               // liButtons.setAttribute("button");
+               
+               /* Did not help create a clickable answer
+               var element = event.target;
+               var button= document.createElement("button");
+               button.textContent = "Submit";
+               liButtons.appendChild(button);
+
+               */
+               if( this.innerHTML === questionAnswers){
                alert("Answer Correct");
                }
                else {
