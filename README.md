@@ -20,5 +20,5 @@ You are required to submit the following for review:
 
 *  Deployed application: https://jones-m12.github.io/Disney-Pop-Quiz/
 
-*  GitHub repository:
+*  GitHub repository: https://github.com/Jones-M12/Disney-Pop-Quiz.git
 
