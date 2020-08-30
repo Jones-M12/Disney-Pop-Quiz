@@ -18,9 +18,7 @@ The following animation demonstrates the application functionality:
 
 You are required to submit the following for review:
 
-* The URL of the functional, deployed application.
+*  Deployed application: https://jones-m12.github.io/Disney-Pop-Quiz/
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+*  GitHub repository:
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
