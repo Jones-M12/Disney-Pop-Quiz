@@ -14,9 +14,15 @@ The following animation demonstrates the application functionality:
 
 ![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
-### Review
+## Technology Used
 
-You are required to submit the following for review:
+* CSS
+
+* HTML
+
+* Booststrap
+
+### Review
 
 *  Deployed application: https://jones-m12.github.io/Disney-Pop-Quiz/
 
