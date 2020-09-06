@@ -22,7 +22,7 @@
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
               
-              <a><strong>Timer: <span id ="score-count">0</span></strong></a>
+              <a class="timer"><strong>Timer: <span id ="time">0</span></strong></a>
             
             </li>
           </ul>
@@ -34,7 +34,7 @@
 
     <!-- Wecolme Page(Main Page-->
     <Main class="homepage">
-        <section>
+        <section id="start-screen" class="start">
             <h2>Disney Pop Quiz Challenge</h2>
             <p> Try to answer the following questions within the 100 seconds time limit.
                 <br><br>
@@ -46,27 +46,24 @@
         
     <!--- Questions & Answers -->
     <section id= "qa">
-        <div id= "questions">
-            
-        </div>
-        <div id= "answers">
-            <ul id ="answersBox">
-                
-            </ul>
-        </div>
+        <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+          </div>
     </section>
         
     <!--- Game has ended. Calculates Final Score-->
-    <section id= "game-end"> <!--hint:display none-->>
+    <section id= "game-end" class= "hide"> 
         <div class="finalscore">
             <h1>Challenge Finished</h1>
             <form id="finalscore-form" method="POST">
               <h2>Your final score is: <span id="score-count">0</span> </h2>
               <label for="score-text">Enter Initials:</label>
-              <input type="text" name="score-text" id="score-text"/>
+              <input type="text" name="score-text" id="initials"/>
               <button id="submit">Submit</button>
             </form>   
         </div>
+        <div id="feedback" class="feedback hide"></div>
     </section>
 
 
