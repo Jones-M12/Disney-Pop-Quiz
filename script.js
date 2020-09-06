@@ -1,5 +1,7 @@
 //Variable references of the elements from HTML file
 
+
+
 var startQuiz = document.querySelector("#start");
 var currentQuestion=0;
 var timer = 120;
