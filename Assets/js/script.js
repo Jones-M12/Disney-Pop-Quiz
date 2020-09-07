@@ -4,7 +4,7 @@
 
 // var startQuiz = document.querySelector("#start");
 var currentQuestionArray= 0;
-var timer = questions.length * 120;
+var time = quizQuestions.length * 15;
 var timerId;
 
 
