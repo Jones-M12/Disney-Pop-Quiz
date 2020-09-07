@@ -4,7 +4,7 @@ var quizQuestions = [
     { 
         text:"What animal was Tarzan raise by?",
         answers: ["Penguin","Elephant","Gorillas","Lions"],
-        correctAnswer: "gorillas"
+        correctAnswer: "Gorillas"
    },
 
    { 
