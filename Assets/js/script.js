@@ -73,7 +73,7 @@ function getQuestion() {
 
 function questionClick() {
   // check if user guessed wrong
-  if (this.value !== questions[currentQuestionArray].correctAnswer) {
+  if (this.value !== quizQuestions[currentQuestionArray].correctAnswer) {
     // penalize time
     time -= 15;
 
