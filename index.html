@@ -11,58 +11,58 @@
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
 </head>
 <body>
 
     
     <!--Navigation Bar-->
-    <div class="viewhighscores">
-        <a href="./finalscores.html" >View Highscores</a>                  
-    </div>
+    <nav class="navbar navbar-dark bg-danger">
+        <a class="navbar-brand" href="./finalscores.html" id="viewhighscores"><h4>View Highscores</h4></a>
+                           
+        <div class="timer"><strong>Timer: <span id="time">0</span></strong></div>  
+    </nav>
 
-    <div class="timer">Time: <span id="time">0</span></div>
 
     <!-- Wecolme Page(Main Page-->
     <Main class="homepage">
         <section id="start-screen" class="start">
+            <br><br>
             <h2>Disney Pop Quiz Challenge</h2>
-            <p> Try to answer the following questions within the 100 seconds time limit.
+            <br><br>
+            <p> Try to answer the following questions within the time limit.
                 <br><br>
-                Keep in mind, incorrect answers will cause a deducations of 10 seconds.
+                Keep in mind, incorrect answers will cause a deducations of 15 seconds.
+                <br><br>
+                So, hit the button if you think you can win! 
             </p>
             <button id="start">Ready? Let's Go!</button>
         </section>    
     </Main>
         
     <!--- Questions & Answers -->
-    <section id= "qa">
+    <section id= "qa" class="start">
         <div id="questions" class="hide">
+            <br><br>
             <h2 id="question-title"></h2>
-            <div id="choices" class="choices"></div>
+            <br><br>
+            <div id="choices" class="choices text-align:center"></div>
+            <div id="feedback" class="feedback hide"></div>
           </div>
     </section>
         
     <!--- Game has ended. Calculates Final Score-->
     <section id= "game-end" class= "hide"> 
         <div class="finalscore">
+            <br><br>
             <h1>Challenge Finished</h1>
-        <p>Your final score is <span id="score-count"></span></p>
-        <p>
-          Enter initials: <input type="text" id="initials"  />
-          <button id="submit">Submit</button>
-        </p>
-
-
-
-            <!-- <h1>Challenge Finished</h1>
-            <form id="finalscore-form" >
-              <h2>Your final score is: <span id="score-count">0</span> </h2>
-              <label for="score-text">Enter Initials:</label>
-              <input type="text" id="initials"/>
-              <button id="submit">Submit</button>
-            </form>    -->
+            <br><br>
+            <p>Your final score is <span id="score-count"></span></p>
+            <p>
+            Enter initials: <input type="text" id="initials"  />
+            <button id="submit">Submit</button>
+            </p>            
         </div>
-        <div id="feedback" class="feedback hide"></div>
     </section>
 
 

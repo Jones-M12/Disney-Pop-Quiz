@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Highscores</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Disney Pop Quiz</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
   </head>
 
   <body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-dark bg-danger">    
+        <h1 id="high">Highscores</h1>                              
+    </nav>
+
     <!-- View Scores Page-->
         <section class= "displayhighscores" class= "hide">
-            <div>       
+            <div> 
+                <br>      
                 <!-- Header-->
-                <h2>Highscores</h2>
+                <h3 class="header">You did it!</h3>
 
                     <!--Append each players high score: Ordered List-->
                     <ol id="highscore"></ol>
