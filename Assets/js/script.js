@@ -3,7 +3,7 @@
 
 
 // var startQuiz = document.querySelector("#start");
-var currentQuestionArray=0;
+var currentQuestionArray= 0;
 var timer = questions.length * 120;
 var timerId;
 
@@ -45,7 +45,7 @@ function startQuiz() {
 
 function getQuestion() {
   // get current question object from array
-  var currentQuestion = questions[currentQuestionArray];
+  var currentQuestion = quizQuestions[currentQuestionArray];
 
   // update title with current question
   var titleEl = document.getElementById("question-title");
