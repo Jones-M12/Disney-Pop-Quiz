@@ -56,12 +56,21 @@
     <section id= "game-end" class= "hide"> 
         <div class="finalscore">
             <h1>Challenge Finished</h1>
-            <form id="finalscore-form" method="POST">
+        <p>Your final score is <span id="score-count"></span></p>
+        <p>
+          Enter initials: <input type="text" id="initials"  />
+          <button id="submit">Submit</button>
+        </p>
+
+
+
+            <!-- <h1>Challenge Finished</h1>
+            <form id="finalscore-form" >
               <h2>Your final score is: <span id="score-count">0</span> </h2>
               <label for="score-text">Enter Initials:</label>
-              <input type="text" name="score-text" id="initials"/>
+              <input type="text" id="initials"/>
               <button id="submit">Submit</button>
-            </form>   
+            </form>    -->
         </div>
         <div id="feedback" class="feedback hide"></div>
     </section>

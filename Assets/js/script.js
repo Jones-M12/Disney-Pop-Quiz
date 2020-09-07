@@ -105,7 +105,7 @@ function questionClick() {
   currentQuestionArray++;
 
   // check if we've run out of questions
-  if (currentQuestionArray === questions.length) {
+  if (currentQuestionArray === quizQuestions.length) {
     quizEnd();
   } else {
     getQuestion();
@@ -117,11 +117,11 @@ function quizEnd() {
   clearInterval(timerId);
 
   // show end screen
-  var endScreenEl = document.getElementById("end-screen");
+  var endScreenEl = document.getElementById("game-end");
   endScreenEl.removeAttribute("class");
 
   // show final score
-  var finalScoreEl = document.getElementById("final-score");
+  var finalScoreEl = document.getElementById("score-count");
   finalScoreEl.textContent = time;
 
   // hide questions section
@@ -147,7 +147,7 @@ function saveHighscore() {
   if (initials !== "") {
     // get saved scores from localstorage, or if not any, set to empty array
     var highscores =
-      JSON.parse(window.localStorage.getItem("highscores")) || [];
+      JSON.parse(window.localStorage.getItem("highscore")) || [];
 
     // format new score object for current user
     var newScore = {
@@ -157,10 +157,10 @@ function saveHighscore() {
 
     // save to localstorage
     highscores.push(newScore);
-    window.localStorage.setItem("highscores", JSON.stringify(highscores));
+    window.localStorage.setItem("highscore", JSON.stringify(highscores));
 
     // redirect to next page
-    window.location.href = "highscores.html";
+    window.location.href = "finalscores.html";
   }
 }
 
