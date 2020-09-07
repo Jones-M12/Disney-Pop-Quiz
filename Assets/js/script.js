@@ -73,7 +73,7 @@ function getQuestion() {
 
 function questionClick() {
   // check if user guessed wrong
-  if (this.value !== questions[currentQuestionIndex].answer) {
+  if (this.value !== questions[currentQuestionArray].correctAnswer) {
     // penalize time
     time -= 15;
 
@@ -85,12 +85,12 @@ function questionClick() {
     timerEl.textContent = time;
 
     // play "wrong" sound effect
-    sfxWrong.play();
+//     sfxWrong.play();
 
     feedbackEl.textContent = "Wrong!";
   } else {
     // play "right" sound effect
-    sfxRight.play();
+//     sfxRight.play();
 
     feedbackEl.textContent = "Correct!";
   }
@@ -102,10 +102,10 @@ function questionClick() {
   }, 1000);
 
   // move to next question
-  currentQuestionIndex++;
+  currentQuestionArray++;
 
   // check if we've run out of questions
-  if (currentQuestionIndex === questions.length) {
+  if (currentQuestionArray === questions.length) {
     quizEnd();
   } else {
     getQuestion();
