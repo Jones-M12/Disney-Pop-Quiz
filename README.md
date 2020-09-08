@@ -56,7 +56,7 @@ The following animation demonstrates the application functionality:
 * The user can play as many times as they wish.
 
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+![code quiz](./Assets/DisneyPopQuiz.gif)
 
 ## Future Development
 
